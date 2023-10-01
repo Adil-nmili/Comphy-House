@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap');
+
+
+
+:root {
+    --mainColor: #222;
+    --mainBackground: #fff;
+    --color: #ec7841;
+    --main-tarnsition: .5s ease;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: var(--mainBackground);
+    color: var(--mainColor);
+    font-family: poppins;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, rgb(224, 210, 210), rgb(161, 159, 159));
+    z-index: 2;
+}
+.navbar-center {
+    width: 100%;
+    height: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.burger {
+    height: 22px;
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.burger div {
+    width: 100%;
+    height: 4px;
+    background: var(--mainColor);
+    border: none;
+    border-radius: 3px;
+}
+.navbar-center h2 {
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px #000;
+}
+.navbar-center h2 span {
+    letter-spacing: 2px;
+    color: var(--color);
+    font-size: 1.8rem;
+}
+.number-icons {
+    background-color: #ec7841;
+    width: 15px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    box-shadow: 0 0 10px #000;
+    height: 15px;
+    font-size: .8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.hero {
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    background: url(./images/image5.jpg) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panie-icon {
+    position: relative;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.banner {
+    width: 70%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 2rem;
+}
+.banner-title {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    letter-spacing: 5px;
+}
+.shop-now {
+    padding: 1rem 3rem;
+    border: 1px solid var(--color);
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    background: var(--color);
+    color: var(--mainColor);
+    transition: .5s ease;
+    cursor: pointer;
+}
+.shop-now:hover {
+    background: transparent;
+    color: var(--color);
+}
+/*   end of the header*/
+/*   start of the section*/
+/* this is the end of styling our products */
+.our-product {
+    padding: 3rem 0;
+}
+.title {
+    margin-bottom: 3rem;
+    width: 100%;
+}
+.title h2 {
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+
+.product-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    column-gap: 1.2rem;
+    row-gap: 1.5rem;
+}
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+.addtocard {
+    position: absolute;
+    top: 70%;
+    right: 0;
+    width: 9.2rem;
+    display: flex;
+    background: var(--color);
+    padding: .8rem 0.75rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    color: var(--mainBackground);
+    cursor: pointer;
+    transition: .5s ease;
+    letter-spacing: 1px;
+    transform: translateX(101%);
+}
+.second-burger, .third-burger {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.second-burger div, .third-burger div {
+    background-color: var(--mainColor);
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+}
+.addtocard:hover {
+    background-color: #222;
+    color: #ec7841;
+}
+.addtocard:hover .second-burger div {
+    background-color: var(--color);
+}
+.image-container:hover .addtocard {
+    transform: translateX(0%);
+}
+.image-pro {
+    display: block;
+    width: 100%;
+    height: 12rem;
+    transition: var(--main-tarnsition);
+}
+.image-container:hover .image-pro {
+    opacity: .5;
+}
+.product h3 {
+    margin-top: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+.product h4 {
+    text-align: center;
+    margin-top: .8rem;
+    letter-spacing: 3px;
+    color: var(--color);
+}
+
+/* this is the end of styling our products */
+/* strat of the card */
+.card-overly {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: var(--main-tarnsition);
+    background: #ec77417e;
+    z-index: 5;
+    visibility: hidden;
+}
+.visible {
+    visibility: visible;
+}
+.card {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: var(--main-tarnsition);
+    z-index: 6;
+    overflow: scroll;
+    background: var(--mainBackground);
+    padding: 1.5rem;
+    transform: translateX(100%);
+}
+.card.show {
+    transform: translateX(0);
+}
+.card-header {
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: var(--color);
+    text-decoration: underline;
+    margin: 1rem 0 3rem;
+}
+.card-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 1.5rem;
+    row-gap: 2rem;
+    margin-bottom: 3rem;
+}
+.item-amount {
+    font-size: 1.3rem;
+    color: #222;
+    margin-top: -7px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.down-arrow,
+.up-arrow{
+    font-size: 1.5rem;
+    color: var(--color);
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.card-item img {
+    width: 80px;
+    height: 80px;
+}
+.card-item div h4 {
+    text-transform: capitalize;
+    margin-bottom: .5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.card-item div h5 {
+    color: #ec7841;
+    font-weight: bold;
+    margin-bottom: .2rem;
+}
+.remove-item {
+    color: darkgray;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.div-total {
+    width: 100%;
+    padding: 1rem 2rem;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div-total h3 {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background-color: #222222a4;
+    font-size: 1.5rem;
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.clear-item {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--mainBackground);
+    background: var(--color);
+    border: none;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+.clear-item:hover {
+    box-shadow: 0 0 10px #222;
+    color: #ffffffa6;
+    background-color: #973203;
+}
+@media (min-width: 720px) {
+    .card {
+        width: 25vw;
+        min-width: 610px;
+    }
+}

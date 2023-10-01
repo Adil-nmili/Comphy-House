@@ -1,0 +1,84 @@
+{
+    "items" : [
+        {
+            "sys" : { "id":"1"},
+            "fields": {
+                "title": "Chairs",
+                "price": 50.99,
+                "image": { "fields": { "file": {"url":"./images/image1.jpg"}}}
+            }
+        },
+        {
+            "sys" : { "id":"2"},
+            "fields": {
+                "title": "Luxury Sofa",
+                "price": 1509.99,
+                "image": { "fields": { "file": {"url":"./images/image2.jpg"}}}
+            }
+        },
+        {
+            "sys" : { "id":"3"},
+            "fields": {
+                "title": "Sofa",
+                "price": 159.99,
+                "image": { "fields": { "file": {"url":"./images/image3.jpg"}}}
+            }
+        },
+        {
+            "sys" : { "id":"4"},
+            "fields": {
+                "title": "Comfort matla",
+                "price": 189.45,
+                "image": { "fields": { "file": {"url":"./images/image4.jpg"}}}
+            }
+        },
+        {
+            "sys" : { "id":"5"},
+            "fields": {
+                "title": "Float Bed",
+                "price": 1800.46,
+                "image": { "fields": { "file": {"url":"./images/image5.jpg"}}}
+            }
+        },
+        {
+            "sys" : { "id":"6"},
+            "fields": {
+                "title": "Comfort Chairs",
+                "price": 79.99,
+                "image": { "fields": { "file": {"url":"./images/image6.jpg"}}}
+            }
+        },
+        {
+            "sys" : { "id":"7"},
+            "fields": {
+                "title": "Office Chair",
+                "price": 139.89,
+                "image": { "fields": { "file": {"url":"./images/image7.jpg"}}}
+            }
+        },
+        {
+            "sys" : { "id":"8"},
+            "fields": {
+                "title": "Bedromm Sofa",
+                "price": 246.49,
+                "image": { "fields": { "file": {"url":"./images/image8.jpg"}}}
+            }
+        },
+        {
+            "sys" : { "id":"9"},
+            "fields": {
+                "title": "Luxury Bed",
+                "price": 500.47,
+                "image": { "fields": { "file": {"url":"./images/image9.jpg"}}}
+            }
+        },
+        {
+            "sys" : { "id":"10"},
+            "fields": {
+                "title": "Denning Table",
+                "price": 266.99,
+                "image": { "fields": { "file": {"url":"./images/image10.jpg"}}}
+            }
+        }
+    ]
+}
